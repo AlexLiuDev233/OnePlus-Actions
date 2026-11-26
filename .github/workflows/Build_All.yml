@@ -1,4 +1,4 @@
-name: Build ReSukiSU All Kernel
+name: Build BakaSU All Kernel
 permissions:
   contents: write
   actions: write
