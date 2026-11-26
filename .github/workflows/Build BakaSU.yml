@@ -236,12 +236,12 @@ jobs:
             else
               echo "ℹ️ ccache已存在，跳过初始化"
             fi
+            # 显示缓存统计
+            ccache -s
+            echo "✅ ccache初始化流程完成"
           else
             echo "⚠️ 未找到ccache命令，跳过初始化"
           fi
-          # 显示缓存统计
-          ccache -s
-          echo "✅ ccache初始化流程完成"
 
       - name: "📥 Install Repo Tool | 安装Repo工具"
         run: |
